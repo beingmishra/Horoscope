@@ -1,5 +1,7 @@
 package com.horoscope;
 
+import com.horoscope.zodiacs.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,7 +14,7 @@ public class Homepage {
 
         JFrame fr = new JFrame();
 
-        ImageIcon img = new ImageIcon(Homepage.class.getResource("logo.png"));
+        ImageIcon img = new ImageIcon(Homepage.class.getResource("images/logo.png"));
         JLabel logo = new JLabel();
         logo.setIcon(img);
         logo.setBounds(220,50,90,90);
@@ -62,7 +64,6 @@ public class Homepage {
                 String dayBox = day.getText();
                 LocalDate inputDate = LocalDate.of(Integer.parseInt(yearBox), Integer.parseInt(monthBox), Integer.parseInt(dayBox));
                 getSymbol(inputDate);
-
 
             }
         });

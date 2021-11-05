@@ -1,4 +1,4 @@
-package com.horoscope;
+package com.horoscope.zodiacs;
 
 import javax.swing.*;
 import java.awt.*;
