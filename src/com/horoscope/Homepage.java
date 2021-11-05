@@ -65,6 +65,8 @@ public class Homepage {
                 LocalDate inputDate = LocalDate.of(Integer.parseInt(yearBox), Integer.parseInt(monthBox), Integer.parseInt(dayBox));
                 getSymbol(inputDate);
 
+                fr.dispose();
+
             }
         });
 
